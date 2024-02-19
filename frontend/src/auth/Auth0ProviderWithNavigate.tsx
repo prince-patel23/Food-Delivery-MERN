@@ -14,7 +14,7 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
   const redirectUri = import.meta.env.VITE_AUTH0_CALLBACK_URL;
 
   if (!domain || !clientId || !redirectUri) {
-    throw new Error("Dofa kaik locha 6");
+    throw new Error("Unable to intilise auth");
   }
 
   const onRedirectCallbask = (appState?: AppState, user?: User) => {

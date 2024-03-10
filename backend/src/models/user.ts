@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-  authoId: {
+  auth0Id: {
     type: String,
     require: true,
   },
@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
   name: {
     type: String,
   },
-  addressLine: {
+  addressLine1: {
     type: String,
   },
   city: {
